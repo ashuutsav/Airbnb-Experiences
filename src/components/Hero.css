@@ -1,0 +1,21 @@
+.gridBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridImg {
+  align-self: center;
+  width: 65%;
+  margin: 2%;
+}
+
+.heroTagline {
+  font-size: 7vw;
+  margin: 1% 3%;
+}
+
+.heroContent {
+  width: 65%;
+  font-size: 150%;
+  margin: 1% 3%;
+}

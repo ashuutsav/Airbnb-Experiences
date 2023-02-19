@@ -1,0 +1,50 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 3vw 3vw 2vw 3vw;
+}
+
+.card-soldOut {
+  position: absolute;
+  top: -365px;
+  left: 1vw;
+  background-color: white;
+  padding: 0.2vw 0.5vw;
+}
+
+.card-image {
+  border-radius: 10px;
+}
+
+.card-soldOut-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.card-star {
+  display: flex;
+  /* margin: -1vw 0; */
+  gap: 5px;
+}
+
+.card-star-image {
+  /* align-self: center; */
+  width: 1.1vw;
+  height: 1.1vw;
+  align-self: center;
+}
+
+.card-star-p {
+  align-self: flex-start;
+}
+.card-star-span {
+  color: #918e9b;
+}
+
+.card-course {
+  margin: -1vw 0;
+}
+
+.card-bold {
+  font-weight: bold;
+}
