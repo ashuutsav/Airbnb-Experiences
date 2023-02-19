@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/navbar';
+import Hero from './components/Hero';
+import Card from './components/Card';
+import katie from './images/katie-zaferes.png';
+import data from './components/data.js';
 
 function App() {
+  const cardData = data.map((card) => {
+    return (
+      <Card
+        key={card.id}
+        {...card}
+        img={card.id === 1 ? katie : card.id === 2 ? katie : katie}
+        // soldOut={card.openSpots}
+        // rating={`${card.stats.rating}`}
+        // reviewCount={card.stats.reviewCount}
+        // country="USA"
+        // title={card.title}
+        // price={card.price}
+        // location={card.location}
+      />
+    );
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <Navbar />
+      <Hero />
+      <div className="cards">{cardData}</div>
     </div>
   );
 }
